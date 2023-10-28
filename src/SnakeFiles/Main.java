@@ -23,6 +23,5 @@ public class Main {
         frame.pack();
         snakeGame.requestFocus();
 
-        //todo : add a settings pane to set the grid on or off and to change the colour of the snake
     }
 }

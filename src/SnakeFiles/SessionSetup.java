@@ -2,8 +2,6 @@ package SnakeFiles;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 
 public class SessionSetup extends JDialog {
@@ -50,7 +48,6 @@ public class SessionSetup extends JDialog {
 
 
         cancelButton.addActionListener(e -> {
-            
             closeAllWindows();
             dispose();
         });

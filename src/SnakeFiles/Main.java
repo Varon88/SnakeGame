@@ -1,3 +1,5 @@
+package SnakeFiles;
+
 import javax.swing.*;
 
 public class Main {
@@ -13,7 +15,10 @@ public class Main {
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        SnakeGame snakeGame = new SnakeGame(boardWidth,boardHeight);
+        SessionSetup sessionSetup = new SessionSetup(frame);
+        sessionSetup.setVisible(true);
+
+        SnakeGame snakeGame = new SnakeGame(boardWidth,boardHeight,sessionSetup);
         frame.add(snakeGame);
         frame.pack();
         snakeGame.requestFocus();
